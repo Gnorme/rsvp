@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML 5 Boilerplate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Great+Vibes&family=Poiret+One&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="form-frame">
+      <form id="rsvp-form">
+        <p class="title">Alexandria Thompson</p>
+        <p id="and" class="title">and</p>
+        <p class="title">Noah Goren</p>
+        <div>
+          <label class="custom-field">
+            <input type="text" placeholder="&nbsp;" />
+            <span class="placeholder">First Name</span>
+          </label>
+          <label class="custom-field">
+            <input type="text" placeholder="&nbsp;" />
+            <span class="placeholder">Last Name</span>
+          </label>
+        </div>
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap">
+          <label class="radio-label">
+            <input type="radio" name="attendance" id="attending" onChange="showOptions()" />
+            <span>Attending</span>
+          </label>
+          <label class="radio-label">
+            <input type="radio" checked name="attendance" onChange="showOptions()" />
+            <span>Not attending</span>
+          </label>
+        </div>
+        <div id="dinner-choice">
+          <span>Dinner choice</span>
+          <div style="display: flex; justify-content: space-between; flex-wrap: wrap">
+            <label class="radio-label">
+              <input type="radio" name="food" checked />
+              <span>Beef Bavette</span>
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="food" />
+              <span>Vegetarian Stuffed Pepper</span>
+            </label>
+          </div>
+          <input type="text" placeholder="Please list any food allergies" id="allergies" />
+        </div>
+        <div>
+          <p>Fill us in on anything else we should know</p>
+          <textarea></textarea>
+        </div>
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
