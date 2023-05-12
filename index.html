@@ -28,29 +28,31 @@
             <span class="placeholder">Last Name</span>
           </label>
         </div>
-        <div style="display: flex; justify-content: space-between; flex-wrap: wrap">
-          <label class="radio-label">
-            <input type="radio" name="attendance" id="attending" onChange="showOptions()" value="attending" />
-            <span>Attending</span>
-          </label>
-          <label class="radio-label">
-            <input type="radio" name="attendance" onChange="showOptions()" value="not attending" />
-            <span>Not attending</span>
-          </label>
-        </div>
-        <div id="dinner-choice">
-          <span>Dinner choice</span>
+        <div id="options">
           <div style="display: flex; justify-content: space-between; flex-wrap: wrap">
             <label class="radio-label">
-              <input type="radio" name="food" checked value="beef" />
-              <span>Beef Bavette</span>
+              <input type="radio" name="attendance" id="attending" onChange="showOptions()" value="attending" />
+              <span>Attending</span>
             </label>
             <label class="radio-label">
-              <input type="radio" name="food" value="vegetarian" />
-              <span>Vegetarian Stuffed Pepper</span>
+              <input type="radio" name="attendance" onChange="showOptions()" value="not attending" />
+              <span>Not attending</span>
             </label>
           </div>
-          <input type="text" placeholder="Please list any food allergies" id="allergies" />
+          <div id="dinner-choice">
+            <span>Dinner choice</span>
+            <div style="display: flex; justify-content: space-between; flex-wrap: wrap">
+              <label class="radio-label">
+                <input type="radio" name="food" checked value="beef" />
+                <span>Beef Bavette</span>
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="food" value="vegetarian" />
+                <span>Vegetarian Stuffed Pepper</span>
+              </label>
+            </div>
+            <input type="text" placeholder="Please list any food allergies" id="allergies" />
+          </div>
         </div>
         <div>
           <p>Fill us in on anything else we should know</p>
