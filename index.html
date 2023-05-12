@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>HTML 5 Boilerplate</title>
+    <title>Alexandria and Noah Wedding RSVP</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,7 +14,7 @@
   </head>
   <body>
     <div id="form-frame">
-      <form id="rsvp-form">
+      <form id="rsvp-form" autocomplete="off">
         <p class="title">Alexandria Thompson</p>
         <p id="and" class="title">and</p>
         <p class="title">Noah Goren</p>
@@ -30,11 +30,11 @@
         </div>
         <div style="display: flex; justify-content: space-between; flex-wrap: wrap">
           <label class="radio-label">
-            <input type="radio" name="attendance" id="attending" onChange="showOptions()" />
+            <input type="radio" name="attendance" id="attending" onChange="showOptions()" value="attending" />
             <span>Attending</span>
           </label>
           <label class="radio-label">
-            <input type="radio" checked name="attendance" onChange="showOptions()" />
+            <input type="radio" name="attendance" onChange="showOptions()" value="not attending" />
             <span>Not attending</span>
           </label>
         </div>
@@ -42,11 +42,11 @@
           <span>Dinner choice</span>
           <div style="display: flex; justify-content: space-between; flex-wrap: wrap">
             <label class="radio-label">
-              <input type="radio" name="food" checked />
+              <input type="radio" name="food" checked value="beef" />
               <span>Beef Bavette</span>
             </label>
             <label class="radio-label">
-              <input type="radio" name="food" />
+              <input type="radio" name="food" value="vegetarian" />
               <span>Vegetarian Stuffed Pepper</span>
             </label>
           </div>
@@ -56,6 +56,7 @@
           <p>Fill us in on anything else we should know</p>
           <textarea></textarea>
         </div>
+        <input type="submit" value="Submit" />
       </form>
     </div>
     <script src="index.js"></script>
