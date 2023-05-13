@@ -147,7 +147,7 @@ input[type="radio"] + span:before {
   background-color: rgb(10, 10, 10);
   width: 1.5em;
   height: 1.5em;
-  margin-right: 0.375em;
+  margin-right: 0.38em;
   transition: 0.25s ease;
   box-shadow: inset 0 0 0 0.125em rgb(224, 197, 99);
   border: none;
