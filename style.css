@@ -23,7 +23,7 @@
   /*border: 10px solid;*/
   border-image-slice: 1;
   border-width: 3px;
-  background: linear-gradient(-45deg, #fed5f9 0%, #fafcc0 50%, #fafcc0 50%, #cff9ff 100%);
+  background: linear-gradient(-45deg, #cff9ff 0%, #fafcc0 50%, #fafcc0 50%, #fed5f9 100%);
   background-size: 200% 200%;
   animation: gradient 15s ease infinite;
 }
