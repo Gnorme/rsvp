@@ -40,6 +40,7 @@
 #and {
   font-family: "Great Vibes", cursive;
   font-size: 2rem;
+  text-transform: lowercase;
 }
 #dinner-choice {
   display: flex;
