@@ -69,7 +69,7 @@ textarea {
 }
 
 body {
-  color: black;
+  color: rgb(20, 20, 20);
   background-color: rgb(15, 15, 15);
   font-family: "Poiret One", cursive;
   font-family: "Aboreto", cursive;
@@ -140,7 +140,7 @@ input[type="radio"] {
   left: -9999px;
 }
 input[type="radio"]:checked + span {
-  background-color: mistyrose;
+  border: 1px solid black;
   color: black;
   font-weight: 800;
 }
@@ -181,7 +181,7 @@ input[type="text"]::placeholder {
 
 input[type="submit"] {
   padding: 10px;
-  background-color: black;
+  background-color: rgb(20, 20, 20);
   border: none;
   font-weight: 800;
   font-size: 1.1rem;
