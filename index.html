@@ -10,6 +10,12 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Aboreto&family=Diplomata+SC&family=Great+Vibes&family=Poiret+One&family=Raleway&display=swap"
       rel="stylesheet" />
+    <style>
+      html {
+        visibility: hidden;
+        opacity: 0;
+      }
+    </style>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -28,22 +34,28 @@
         </div>
         <div>
           <label class="custom-field">
-            <input type="text" placeholder="&nbsp;" name="first" />
+            <input type="text" placeholder="&nbsp;" name="first" required />
             <span class="placeholder">First Name</span>
           </label>
           <label class="custom-field">
-            <input type="text" placeholder="&nbsp;" name="last" />
+            <input type="text" placeholder="&nbsp;" name="last" required />
             <span class="placeholder">Last Name</span>
           </label>
         </div>
         <div id="options">
           <fieldset style="display: flex; justify-content: space-between; flex-wrap: wrap; border: none; padding: 0px">
             <label class="radio-label">
-              <input type="radio" name="attendance" id="attending" onChange="showOptions()" value="attending" />
+              <input
+                type="radio"
+                name="attendance"
+                id="attending"
+                onChange="showOptions()"
+                value="attending"
+                required />
               <span>Attending</span>
             </label>
             <label class="radio-label">
-              <input type="radio" name="attendance" onChange="showOptions()" value="not attending" />
+              <input type="radio" name="attendance" onChange="showOptions()" value="not attending" required />
               <span>Not attending</span>
             </label>
           </fieldset>
@@ -51,11 +63,11 @@
             <span>Dinner choice</span>
             <div style="display: flex; justify-content: space-between; flex-wrap: wrap">
               <label class="radio-label">
-                <input type="radio" name="food" checked value="beef" />
+                <input type="radio" name="food" checked value="beef" required />
                 <span>Beef Bavette</span>
               </label>
               <label class="radio-label">
-                <input type="radio" name="food" value="vegetarian" />
+                <input type="radio" name="food" value="vegetarian" required />
                 <span>Vegetarian Stuffed Pepper</span>
               </label>
             </div>

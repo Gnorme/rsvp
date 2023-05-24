@@ -201,7 +201,10 @@ input[type="submit"] {
   color: black;
   outline: none;
 }
-
+html {
+  visibility: visible;
+  opacity: 1;
+}
 /*.stack-top {
 
   --d: 5px;
